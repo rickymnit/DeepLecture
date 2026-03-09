@@ -1,0 +1,63 @@
+################################
+# Python Backend
+################################
+
+# Virtual environments
+venv/
+.env/
+.env
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.sqlite3
+
+# FastAPI logs
+*.log
+
+################################
+# Backend data (do not upload)
+################################
+
+backend/data/uploads/
+backend/data/transcripts/
+backend/data/vector_store/
+
+################################
+# Node / React Frontend
+################################
+
+node_modules/
+dist/
+build/
+
+# Vite cache
+.vite/
+
+# npm logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+################################
+# OS files
+################################
+
+.DS_Store
+Thumbs.db
+
+################################
+# IDE files
+################################
+
+.vscode/
+.idea/
+
+################################
+# Misc
+################################
+
+*.swp
+*.swo
