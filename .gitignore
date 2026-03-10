@@ -1,63 +1,50 @@
-################################
-# Python Backend
-################################
-
-# Virtual environments
+# Dependencies
+node_modules/
 venv/
-.env/
-.env
-
-# Python cache
+env/
+.venv/
 __pycache__/
+
+# Python
 *.pyc
 *.pyo
 *.pyd
-*.sqlite3
 
-# FastAPI logs
-*.log
+# Node
+npm-debug.log
+npm-debug.log.*
+yarn-error.log
+package-lock.json
 
-################################
-# Backend data (do not upload)
-################################
+# Environment Variables
+/env
+.env
 
-backend/data/uploads/
-backend/data/transcripts/
-backend/data/vector_store/
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
 
-################################
-# Node / React Frontend
-################################
-
-node_modules/
-dist/
-build/
-
-# Vite cache
-.vite/
-
-# npm logs
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-
-################################
-# OS files
-################################
-
+# OS Files
 .DS_Store
 Thumbs.db
+Desktop.ini
 
-################################
-# IDE files
-################################
+# Build and Data Directories
+frontend/dist/
+frontend/build/
+backend/data/
+*.db
+*.sqlite3
 
+# Logs
+*.log
+
+# Editor configurations
 .vscode/
 .idea/
-
-################################
-# Misc
-################################
-
-*.swp
-*.swo
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?

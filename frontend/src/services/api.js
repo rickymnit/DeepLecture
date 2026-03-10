@@ -1,11 +1,20 @@
-import axios from "axios"
+import axios from 'axios';
 
-const API = axios.create({
-    baseURL: "http://127.0.0.1:8000"
-})
+const api = axios.create({
+    baseURL: 'http://127.0.0.1:8000',
+    headers: {
+        'Content-Type': 'application/json',
+    },
+});
 
-export const addYoutube = (url) =>
-    API.post("/add_youtube", { url })
+export const addYoutube = async (url) => {
+    const response = await api.post('/add_youtube', { url });
+    return response.data;
+};
 
-export const chat = (question) =>
-    API.post("/chat", { question })
+export const chatWithLecture = async (question) => {
+    const response = await api.post('/chat', { question });
+    return response.data;
+};
+
+export default api;
